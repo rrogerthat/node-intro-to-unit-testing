@@ -7,3 +7,5 @@ function adder(a, b) {
 }
 
 module.exports = adder;
+
+//can also do module.exports = function adder(a, b)...
