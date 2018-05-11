@@ -36,6 +36,16 @@ describe('fizzBuzzer', function() {
 		});
 	});
 
+	it('Returns number', function() {
+
+		const normalCases = [1, 2, 7];
+
+		normalCases.forEach(function(input) {
+			const answer = fizzBuzzer(input);
+			expect(answer).to.equal(input);
+		});
+	});
+
 	it('should raise an error if arg not number', function() {
 		
 		const badInputs = ['1', false, 'b'];
